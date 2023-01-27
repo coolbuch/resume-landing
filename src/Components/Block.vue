@@ -1,23 +1,24 @@
 <template>
     <div>
-        <MySection>
-
-        </MySection>
+        {{ title }}
+       <slot></slot>
     </div>
 </template>
 
 <script>  
-import Section from "./Components/MySection"
-
     export default{
-        components:{
-            MySection: Section,
-        },
         data()
         {
             return {
-                
+                title: "Block",
             }
+        },
+        props:
+        {
+            title: String,
+            dateFrom: String,
+            dateTo: String,
+            
         },
         methods:
         {

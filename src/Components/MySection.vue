@@ -1,22 +1,22 @@
 <template>
     <div>
-        <MySection>
-
-        </MySection>
+        {{title}} 
+        <block>1</block>
+        <block>1</block>
     </div>
 </template>
 
 <script>  
-import Section from "./Components/MySection"
-
+import Block from "./Block"
     export default{
-        components:{
-            MySection: Section,
+        components:
+        {
+            Block,
         },
         data()
         {
             return {
-                
+                title: "Section",
             }
         },
         methods:
