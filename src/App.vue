@@ -41,5 +41,6 @@ import data from "./data"
 #app{
     width: 90%;
     margin: 0 auto;
+    margin-top: 10px;
 }
 </style>

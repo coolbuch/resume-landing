@@ -39,7 +39,7 @@ import Block from "./Block"
 
 .block{
     padding: 15px;
-    border: 2px solid;
+    border: 1px solid;
     margin-top: 15px; 
 }
 </style>
