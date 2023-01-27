@@ -1,8 +1,11 @@
 <template>
     <div>
-        {{title}} 
-        <block>1</block>
-        <block>1</block>
+        <h2>{{title}}</h2> 
+        {{ length }}
+        <block class="block" v-for="item in items" 
+            :item="item">
+                {{i}}
+            </block>
     </div>
 </template>
 
@@ -13,18 +16,30 @@ import Block from "./Block"
         {
             Block,
         },
+        props:{
+            title: String,
+            length: Number,
+            items : []
+        },
         data()
         {
             return {
-                title: "Section",
+                
             }
         },
         methods:
         {
             
-        }
+        },
+        mounted(){console.log(length)}
     }
 </script>
 
-<style>
+<style scoped>
+
+.block{
+    padding: 15px;
+    border: 2px solid;
+    margin-top: 15px; 
+}
 </style>
