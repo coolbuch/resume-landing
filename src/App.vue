@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="primary">
         <div class="flex-wrapper">
             <div class="left">
                 <div class="section">
@@ -54,11 +54,18 @@ import data from "./data"
 </script>
 
 <style>
-
+:root{
+    --primary-color: #E0E0E0;
+    --light-color: #EEEEEE;
+    --dark-color: #BDBDBD;
+    --shadow-color: rgba(97, 97, 97, 0.8);
+}
 
 .section{
     padding: 3px;
+    
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -101,10 +108,13 @@ ul{
     list-style-position: inside;
 }
 
-@media screen and (min-width:720px) {
-    body{
-        background-color: gainsboro;
+body{
+        background-color: var(--primary-color);
+        /*background-color: gainsboro;*/
     }
+
+@media screen and (min-width:720px) {
+    
     #app{
         margin: 0 auto;
         width: 95%;
@@ -127,6 +137,7 @@ ul{
 
     .right{
         flex-grow: 1;
+
     }
 
     

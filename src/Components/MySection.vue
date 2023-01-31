@@ -46,7 +46,9 @@ import Block from "./Block"
 }
 .block{
     padding: 15px;
-    border: 1px solid;
+    /*border: 1px solid;*/
+    box-shadow: 2px 2px 10px 1px var(--shadow-color);
+    background-color: var(--light-color);
     margin-top: 15px; 
 }
 </style>

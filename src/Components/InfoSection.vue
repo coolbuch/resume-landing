@@ -2,21 +2,31 @@
     <div class = "this">
         <div class="name">
             <h2 class="name">{{ data.name }}</h2>
-            <h3>{{ data.target }}</h3>
+            <h3 class="target">{{ data.target }}</h3>
         </div>
         <div class="img-about-wrapper">
             <div class="image">
-                <img :src="data.img"/>
+                <img src="../img/phot.jpg"/>
             </div>
             <div class="about" > <h3>Обо мне</h3>{{data.about }}</div>
         </div>
         <div class = "skills">
             <h3>Навыки</h3>
             <ul><li v-for="elem in data.skills">{{ elem }}</li></ul>
-            
         </div>
-        
+        <div>
+            <div class="location"><h3>Город:</h3> {{ data.location }}</div>
+            <div class="links">
+                <h3>Ссылки:</h3> 
+                <ul>
+                    <li v-for="elem in data.links">
+                        <a target="_blank" :href="elem"> {{ elem.substring(8).substr(0,elem.indexOf("/")) }} </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
+    
 </template>
 
 <script>  
@@ -49,14 +59,12 @@
     flex-wrap: wrap;
     padding: 15px;
     padding-top: 0;
-    
-    border: 1px solid; 
+    box-shadow: 2px 2px 10px 1px var(--shadow-color);
+    background-color: var(--light-color);
 }
 
 .img-about-wrapper{
     display: flex;
-    flex-direction: reverse;
-    justify-content: center;
     align-items: center;
 }
 
@@ -73,6 +81,16 @@ img{
     text-align: justify;
 }
 
+h3{
+    margin-bottom: 2px;
+}
+
+.target{
+    font-style: italic;
+    color: gray;
+    opacity: 0.9;
+    font-weight: 700;
+}
 @media screen and (min-width:720px)  {
     .this{
         flex-direction: column;

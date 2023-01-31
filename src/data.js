@@ -2,11 +2,11 @@ export default {
     info: {
         name: "Ковальчук Дмитрий Сергеевич",
         target: "Frontend developer",
-        img :"../img/photo.jpg",
+        img :"../img/phot.jpg",
         about : "Стремлюсь стать частью профессиональной и дружной команды, чтобы развивать свои личные навыки Frontend и Backend разработки для достижения командных результатов, а также изучать новые для себя технологии. ",
         skills : ["HTML,CSS", "JavaScript ES6+", "Vue.js", "Rest API", "Git", "PHP, Laravel", "Python: Flask, aio-http"],
         location: "Иркутск",
-        links: [""],
+        links: ["https://github.com/coolbuch?tab=repositories"],
     },
     sections:[
         {
@@ -142,7 +142,7 @@ export default {
                     link: "https://coolbuch.github.io/minesweeperOld/",
                 },
                 {
-                    title: "Игра \"Собери паззл\" на JS",
+                    title: "Игра \"Собери пазл\" на JS",
                     dateFrom: "Декабрь, 2019",
                     list : ["Законченная реализация игры Паззл на JS"],
                     info: "Стек: HTML, CSS, JS",
