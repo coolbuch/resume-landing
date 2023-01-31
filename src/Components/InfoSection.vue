@@ -55,7 +55,7 @@
 
 .img-about-wrapper{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: reverse;
     justify-content: center;
     align-items: center;
 }
@@ -69,7 +69,7 @@ img{
     width: inherit;
 }
 .about{
-    margin-right: 10px;
+    margin-left: 10px;
     text-align: justify;
 }
 
@@ -110,5 +110,24 @@ img{
     }
 }
 
+@media screen and (min-height:1079px) 
+{
+    .image{
+        width: 25vw;
+    }
+    
+
+    img{
+        width: inherit;
+    }
+
+
+    .about{
+        margin-left: 10px;
+        text-align: justify;
+        width: 25vw;
+        margin: 0px;
+    }
+}
 
 </style>
