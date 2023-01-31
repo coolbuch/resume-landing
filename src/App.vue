@@ -1,22 +1,28 @@
 <template>
     <div>
-        <MySection v-for="section in sections" :title="section.title" :items="section.items">
+        
+        <InfoSection :data = "data.info"></InfoSection>
+        <div class = "sections">
+            <MySection v-for="section in data.sections" :title="section.title" :items="section.items">
 
-        </MySection>
+            </MySection>
+        </div>
     </div>
 </template>
 
 <script>  
 import Section from "./Components/MySection"
+import InfoSection from "./Components/InfoSection.vue"
 import data from "./data"
     export default{
         components:{
             MySection: Section,
+            InfoSection,
         },
         data()
         {
             return {
-                sections : data.sections
+                data : data
             }
         },
         methods:

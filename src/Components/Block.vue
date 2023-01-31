@@ -12,7 +12,8 @@
             <li v-for="element in item.list">{{ element }}</li>  
        </div>
        <div v-if="item.info"> {{ item.info }} </div>
-       <a v-if="item.link" :href="item.link" target="_blank"> [Ссылка]</a>
+       <div><a v-if="item.link" :href="item.link" target="_blank"> [Исходный код]</a></div>
+       <div><a v-if="item.demoLink" :href="item.demoLink" target="_blank"> [Демонстрация]</a></div>
     </div>
 </template>
 

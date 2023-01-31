@@ -1,5 +1,9 @@
 export default {
-    info: {},
+    info: {
+        img :"../img/photo.jpg",
+        info : "ASASDASD",
+        skills : ["1", "2", "3"],
+    },
     sections:[
         {
             title: "Образование",
