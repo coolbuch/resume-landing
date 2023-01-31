@@ -1,8 +1,11 @@
 <template>
-    <div>
-        <img :src="data.img"/>
-        {{data.info }}
-        {{ data.skills }}
+    <div class = "this">
+        <div class="image">
+            <img :src="data.img"/>
+        </div>
+        <div class = "info">{{data.info }}</div>
+        
+        <div class = "skills">{{ data.skills }}</div>
     </div>
 </template>
 
@@ -31,4 +34,23 @@
 
 <style scoped>
 
+.image{
+    width: 20vh;
+}
+
+img{
+    width: inherit;
+}
+.info{
+    margin-left: 10px;
+}
+
+.this{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    border: 1px solid;
+    margin-top: 15px; 
+}
 </style>
