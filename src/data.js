@@ -3,8 +3,10 @@ export default {
         name: "Ковальчук Дмитрий Сергеевич",
         target: "Frontend developer",
         img :"../img/photo.jpg",
-        about : "Стремлюсь стать частью профессиональной и дружной команды, чтобы развивать свои личные навыки web разработки для достижения командных результатов, а также изучать новые для себя технологии. ",
-        skills : ["1", "2", "3"],
+        about : "Стремлюсь стать частью профессиональной и дружной команды, чтобы развивать свои личные навыки Frontend и Backend разработки для достижения командных результатов, а также изучать новые для себя технологии. ",
+        skills : ["HTML,CSS", "JavaScript ES6+", "Vue.js", "Rest API", "Git", "PHP, Laravel", "Python: Flask, aio-http"],
+        location: "Иркутск",
+        links: [""],
     },
     sections:[
         {
@@ -47,12 +49,13 @@ export default {
         },
         {
             title: "Проекты",
+            sortable: "true",
             items:
             [
                 {
                     title: "Сайт-резюме на Vue.js",
                     dateFrom: "Январь, 2023",
-                    list : ["Верстка сайта, используя компонентный подход на Vue.js"],
+                    list : ["Верстка сайта, используя компонентный подход на Vue.js", "Реализация верстки под разные устройства"],
                     link : "https://github.com/coolbuch/resume-landing",
                     info: "Стек: Vue.js, HTML, CSS"
                 },

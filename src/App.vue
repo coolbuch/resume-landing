@@ -9,12 +9,12 @@
             </div>
             
             <div class="right">
-                <div class="menu">
+                <!--<div class="menu">
                     <button>123</button>
                     <button>123</button>
                     <button>123</button>
-                </div>
-                <MySection class="section" v-for="section in data.sections" :title="section.title" :items="section.items">
+                </div>-->
+                <MySection class="section" v-for="section in data.sections" :sortable="section.sortable" :title="section.title" :items="section.items">
             </MySection>
             </div>
             
