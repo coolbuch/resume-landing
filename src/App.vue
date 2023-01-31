@@ -2,8 +2,8 @@
     <div>
         <div class="flex-wrapper">
             <div class="left">
-                <div>
-                    <InfoSection :data = "data.info"></InfoSection>
+                <div class="section">
+                    <InfoSection  :data = "data.info"></InfoSection>
                     
                 </div>
             </div>
@@ -14,7 +14,7 @@
                     <button>123</button>
                     <button>123</button>
                 </div>
-                <MySection v-for="section in data.sections" :title="section.title" :items="section.items">
+                <MySection class="section" v-for="section in data.sections" :title="section.title" :items="section.items">
             </MySection>
             </div>
             
@@ -54,12 +54,53 @@ import data from "./data"
 </script>
 
 <style>
+
+
+.section{
+    padding: 3px;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.menu{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+.menu button{
+    min-width: 100px;
+    font-family: inherit;
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #4676d7;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.menu button:hover {
+  background: #1d49aa;
+}
+
+.menu button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #cbd6ee;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
 @media screen and (min-width:720px) {
     body{
         background-color: gainsboro;
@@ -91,31 +132,6 @@ import data from "./data"
     
 }
 
-.menu{
-        margin-bottom: 10px;
-        margin-top: 10px;
-        display: flex;
-        justify-content: space-evenly;
-    }
-.menu button{
-    min-width: 100px;
-    font-family: inherit;
-    appearance: none;
-    border: 0;
-    border-radius: 5px;
-    background: #4676d7;
-    color: #fff;
-    padding: 8px 16px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-.menu button:hover {
-  background: #1d49aa;
-}
 
-.menu button:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px #cbd6ee;
-}
 
 </style>

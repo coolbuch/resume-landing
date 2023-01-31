@@ -9,7 +9,9 @@
        <div v-if="item.profile"> {{ item.profile }}</div>
        
        <div v-if="item.list"> 
-            <li v-for="element in item.list">{{ element }}</li>  
+            <ul>
+                <li v-for="element in item.list">{{ element }}</li>  
+            </ul>
        </div>
        <div v-if="item.info"> {{ item.info }} </div>
        <div><a v-if="item.link" :href="item.link" target="_blank"> [Исходный код]</a></div>
