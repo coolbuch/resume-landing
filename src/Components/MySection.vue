@@ -1,9 +1,11 @@
 <template>
     <div>
-        <div>
-            <h2>{{title}}</h2> 
-            <div v-if="sortable" class="menu">
-                
+        <div class="section-header">
+            <h2 class="title"> 
+                {{title}} 
+            </h2>
+            <div v-if="sortable" class="dropdown">
+                <my-drop-down-menu :title="111" :items="['По дате', 'По наличию исходного кода']"></my-drop-down-menu>
             </div>
         </div>
         <block class="block" v-for="item in items" 
@@ -14,10 +16,12 @@
 
 <script>  
 import Block from "./Block"
+import MyDropDownMenu from "@/UI/MyDropDownMenu.vue";
     export default{
         components:
         {
             Block,
+            MyDropDownMenu,
         },
         props:{
             title: String,
@@ -39,11 +43,6 @@ import Block from "./Block"
 </script>
 
 <style scoped>
-.menu{
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-}
 .block{
     padding: 15px;
     /*border: 1px solid;*/
@@ -51,4 +50,10 @@ import Block from "./Block"
     background-color: var(--light-color);
     margin-top: 15px; 
 }
+
+.section-header{
+    display: flex;
+    justify-content: space-between;
+}
+
 </style>
