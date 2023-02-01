@@ -74,9 +74,7 @@ import MyDropDownMenu from "@/UI/MyDropDownMenu.vue";
             }
         },
         mounted(){
-            this.items.forEach(element => {
-                    this.localItems.push(element);
-            });
+            this.copyItems();
         }
     }
 </script>

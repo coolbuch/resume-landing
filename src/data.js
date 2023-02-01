@@ -4,9 +4,9 @@ export default {
         target: "Frontend developer",
         img :"./img/2.png",
         about : "Стремлюсь стать частью профессиональной и дружной команды, чтобы развивать свои личные навыки Frontend и Backend разработки для достижения командных результатов, а также изучать новые для себя технологии. ",
-        skills : ["HTML,CSS", "JavaScript ES6+", "Vue.js", "Rest API", "Git", "PHP, Laravel", "Python: Flask, aio-http"],
+        skills : ["HTML,CSS", "JavaScript ES6+", "Vue.js, Vuetify", "Rest API", "Git", "PHP, Laravel", "Python: Flask, aio-http"],
         location: "Иркутск",
-        links: ["https://github.com/coolbuch?tab=repositories"],
+        links: ["https://github.com/coolbuch"],
     },
     sections:[
         {
@@ -113,7 +113,8 @@ export default {
                     dateFrom: "Декабрь, 2020",
                     list : ["Реализация удаления и добавления заметок, пометки о выполнении, сохранение в local storage"],
                     info: "Стек: Vue, HTML, bootstrap",
-                    link: "https://coolbuch.github.io/VueJS_Notes/",
+                    link: "https://github.com/coolbuch/VueJS_Notes",
+                    demoLink: "https://coolbuch.github.io/VueJS_Notes/",
                 }, 
                 {
                     title: "Приложение \"Мой календарь\" на PHP",
@@ -122,7 +123,7 @@ export default {
                             "Сохранение данных в БД MySQL",
                             "Верстка шаблона для страницы"],
                     info: "Стек: PHP, MySQL, HTML, CSS",
-                    link: "http://phpproject.hostfl.ru/index.php",
+                    demoLink: "http://phpproject.hostfl.ru/index.php",
                 }, 
                 {
                     title: "Приложение \"Регистрация на мероприятие\" на PHP",
@@ -131,14 +132,15 @@ export default {
                             "Сохранение данных в БД MySQL",
                             "Верстка шаблона для страницы"],
                     info: "Стек: PHP, MySQL, HTML, CSS",
-                    link: "https://php_hw.hostfl.ru/",
+                    demoLink: "https://php_hw.hostfl.ru/",
                 },
                 {
                     title: "Игра \"Сапер\" на JS",
                     dateFrom: "Декабрь, 2019",
                     list : ["Законченная реализация игры сапер на JS с возможностью генерации поля различного размера с разным количеством мин"],
                     info: "Стек: HTML, CSS, JS",
-                    link: "https://coolbuch.github.io/minesweeperOld/",
+                    demoLink: "https://coolbuch.github.io/minesweeperOld/",
+                    link: "https://github.com/coolbuch/minesweeperOld/",
                 },
                 {
                     title: "Игра \"Собери пазл\" на JS",
@@ -146,6 +148,7 @@ export default {
                     list : ["Законченная реализация игры Паззл на JS"],
                     info: "Стек: HTML, CSS, JS",
                     link: "https://github.com/coolbuch/pazzleOld/",
+                    demoLink: "https://coolbuch.github.io/pazzleOld/",
                 },
                 {
                     title: "Todolist на JS",
@@ -153,6 +156,7 @@ export default {
                     list : ["Создание, редактирование, удаление заметок на JS"],
                     info: "Стек: HTML, CSS, JS",
                     link: "https://github.com/coolbuch/todolistJS/",
+                    demoLink: "https://coolbuch.github.io/todolistJS/",
                 }
             ],
         },
