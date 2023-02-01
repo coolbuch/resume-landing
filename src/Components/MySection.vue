@@ -49,7 +49,7 @@ import MyDropDownMenu from "@/UI/MyDropDownMenu.vue";
                 let endArray = [];
                 this.localItems = [];
                 this.items.forEach(element => {
-                    if (element.link)
+                    if (element.link || element.demoLink)
                         this.localItems.push(element);
                     else
                         endArray.push(element);
