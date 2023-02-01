@@ -6,7 +6,7 @@
         </div>
         <div class="img-about-wrapper">
             <div class="image">
-                <img src="../img/phot.jpg"/>
+                <img :src="data.img"/>
             </div>
             <div class="about" > <h3>Обо мне</h3>{{data.about }}</div>
         </div>
