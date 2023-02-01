@@ -1,5 +1,5 @@
 <template>
-    <div class="primary">
+    <div>
         <div class="flex-wrapper">
             <div class="left">
                 <div class="section">

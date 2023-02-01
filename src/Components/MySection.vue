@@ -5,10 +5,10 @@
                 {{title}} 
             </h2>
             <div v-if="sortable" class="dropdown">
-                <my-drop-down-menu :title="111" :items="['По дате', 'По наличию исходного кода']"></my-drop-down-menu>
+                <my-drop-down-menu @sort="sort" title="Сортировка" :items="['Сначала новые','Сначала старые', 'По наличию исходного кода']"></my-drop-down-menu>
             </div>
         </div>
-        <block class="block" v-for="item in items" 
+        <block class="block" v-for="item in localItems" 
             :item="item">
             </block>
     </div>
@@ -31,14 +31,53 @@ import MyDropDownMenu from "@/UI/MyDropDownMenu.vue";
         data()
         {
             return {
-                
+                localItems : [],
             }
         },
         methods:
         {
-            
+            copyItems(){
+                this.localItems = [];
+                this.items.forEach(element => {
+                    this.localItems.push(element);
+                });
+            },
+            revertSort(){
+                this.localItems = this.items.slice().reverse();
+            },
+            parameterSort(){
+                let endArray = [];
+                this.localItems = [];
+                this.items.forEach(element => {
+                    if (element.link)
+                        this.localItems.push(element);
+                    else
+                        endArray.push(element);
+                });
+                endArray.forEach(element => {
+                    this.localItems.push(element);
+                });
+            },
+            sort(data){
+                if(data.type === 1)
+                {
+                    this.copyItems();
+                }
+                if (data.type === 2)
+                {
+                    this.revertSort();
+                }
+                if (data.type === 3)
+                {
+                    this.parameterSort();
+                }
+            }
         },
-        mounted(){}
+        mounted(){
+            this.items.forEach(element => {
+                    this.localItems.push(element);
+            });
+        }
     }
 </script>
 
@@ -56,4 +95,7 @@ import MyDropDownMenu from "@/UI/MyDropDownMenu.vue";
     justify-content: space-between;
 }
 
+.dropdown{
+    margin-top: 5px;
+}
 </style>

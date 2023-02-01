@@ -97,7 +97,6 @@ export default {
                             "Создание Anroid приложения для взаимодействия с датчиками и сервером",
                             "Сборка и программирование датчика на основе NodeMCU"],
                     info: "Стек: Python, sqlite, Java",
-                    link : "https://github.com/coolbuch/LoraIOT",
                 },
                 {
                     title: "Приложение для работы ресторана",
