@@ -10,7 +10,9 @@
        
        <div v-if="item.list"> 
             <ul>
-                <li v-for="element in item.list">{{ element }}</li>  
+                <li v-for="element in item.list">
+                    {{ element }}
+                </li>  
             </ul>
        </div>
        <div v-if="item.info"> {{ item.info }} </div>
