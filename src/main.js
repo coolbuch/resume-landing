@@ -1,3 +1,4 @@
+import './plugins/axios'
 import { createApp } from 'vue'
 import App from './App'
 import vuetify from './plugins/vuetify'
